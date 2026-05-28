@@ -1,0 +1,24 @@
+#include<iostream>
+
+using namespace std;
+
+class ABC {
+public: 
+    ABC() {
+        cout << "constructor\n";
+    }
+
+    ~ABC() {
+        cout << "destructor\n";
+    }
+};
+
+int main() {
+    if(true) {
+        static ABC obj;  //make it static
+    }
+
+    cout << "end of main function\n";
+
+    return 0;
+}
